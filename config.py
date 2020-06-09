@@ -71,10 +71,10 @@ car_lanes_going_through = {1: {'tram': [], 'pedestrian': []}, # Dla tych pasów 
                            4: {'tram': [], 'pedestrian': []}, # i tak nie będą
                            5: {'tram': [], 'pedestrian': []}, # przejeżdżać po
                            6: {'tram': [], 'pedestrian': []}, # innych pasach
-                           7: {'tram': [(1, 83, 44), (2, 29, 48)], 'pedestrian': []},
-                           8: {'tram': [(1, 79, 44), (2, 33, 48)], 'pedestrian': []},
-                           9: {'tram': [(1, 49, 48), (2, 63, 44)], 'pedestrian': []},
-                           10: {'tram': [(1, 45, 48), (2, 67, 44)], 'pedestrian': []},
+                           7: {'tram': [(1, 83, 42), (2, 29, 46)], 'pedestrian': []},
+                           8: {'tram': [(1, 79, 42), (2, 33, 46)], 'pedestrian': []},
+                           9: {'tram': [(1, 49, 46), (2, 63, 42)], 'pedestrian': []},
+                           10: {'tram': [(1, 45, 46), (2, 67, 42)], 'pedestrian': []},
                            11: {'tram': [], 'pedestrian': []}} # ten też
 
 tram_lanes_going_through = {1: {'car': [(7, 49, 65), (8, 49, 61.5),

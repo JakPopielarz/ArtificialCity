@@ -70,7 +70,7 @@ class Lane:
                     if self.through_lane_busy(through_lane[:-1]):
                         car.max_velocity = 0
                     else:
-                        car.max_velocity = self.speed_limit
+                        car.max_velocity = self.speed_limit / self.ticks_per_second
 
     def through_lane_busy(self, through_lane_tuple):
         '''Check if a set part of another lane is occupied'''
@@ -79,7 +79,7 @@ class Lane:
 
         return len(through_lane.vehicles) != 0 and \
         through_lane.vehicles[through_index].travelled <= through_travelled -1 and \
-        through_lane.vehicles[through_index].travelled >= through_travelled - through_lane.vehicles[through_index].size["length"] - 2
+        through_lane.vehicles[through_index].travelled >= through_travelled - through_lane.vehicles[through_index].size["length"] - 1
 
     def tick_vehicles(self):
         '''Move every car on lane'''
